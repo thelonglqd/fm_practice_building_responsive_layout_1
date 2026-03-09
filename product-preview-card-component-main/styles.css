@@ -1,0 +1,45 @@
+body {
+  font-family: Fraunces;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  max-width: 550px;
+  margin: 0 auto;
+  top: 50%;
+
+  display: flex;
+
+  img {
+    border-radius: 8px 0 0 8px;
+    width: 250px;
+  }
+
+  .detail {
+    width: 250px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+      max-width: 220px;
+    }
+
+    p {
+      max-width: 250px;
+    }
+  }
+}

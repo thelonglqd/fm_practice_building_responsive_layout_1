@@ -49,13 +49,13 @@ p {
       display: flex;
       align-items: center;
 
-      label:first-child {
+      span:first-child {
         font-weight: bold;
         font-size: 1.75rem;
         color: hsl(158, 36%, 37%);
       }
 
-      label:nth-child(2) {
+      span:nth-child(2) {
         font-size: 0.75rem;
         margin-left: 1rem;
         text-decoration: line-through;

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Fraunces;
   background-color: hsl(30, 38%, 92%);
@@ -11,23 +17,30 @@ p {
   border-radius: 8px;
   background-color: hsl(0, 0%, 100%);
   max-width: 600px;
+  margin: 15vh auto;
 
   display: flex;
 
   .hero-image {
     flex-shrink: 0;
-    background-image: url('images/image-product-desktop.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 50%;
+    overflow: hidden;
 
-    border-radius: 8px 0 0 8px;
-    width: 300px;
-    /* height: 300px; */
+    picture {
+      display: block;
+      height: 100%;
+    }
+
+    img {
+      border-radius: 8px 0 0 8px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .detail {
-    /* width: 275px; */
     padding: 1.5rem;
     display: flex;
     gap: 1.5rem;
@@ -35,6 +48,8 @@ p {
     justify-content: space-between;
 
     .title {
+      font-size: 0.9rem;
+      font-weight: 500;
       font-family: Montserrat;
       text-transform: uppercase;
       color: hsl(228, 12%, 48%);
@@ -91,14 +106,19 @@ p {
         background-color: hsl(158, 42%, 18%);
       }
     }
+
+    button:focus-visible {
+      outline: 3px solid hsl(228, 12%, 48%);
+      outline-offset: 3px;
+    }
   }
 }
 
 @media screen and (max-width: 640px) {
   .card {
     flex-direction: column;
+
     .hero-image {
-      background-image: url('images/image-product-mobile.jpg');
       width: 100%;
       border-radius: 8px 8px 0 0;
       aspect-ratio: 1 / 1;

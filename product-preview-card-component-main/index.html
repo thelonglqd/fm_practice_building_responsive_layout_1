@@ -36,9 +36,14 @@
 <body>
   <main>
     <div class="card">
-      <div class="hero-image"></div>
+      <figure class="hero-image">
+        <picture>
+          <source media="(max-width: 640px)" srcset="images/image-product-mobile.jpg">
+          <img src="images/image-product-desktop.jpg" alt="product image">
+        </picture>
+      </figure>
       <section class="detail">
-        <p class="title">Perfume</p>
+        <h2 class="title">Perfume</h2>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p class="description">
           A floral, solar and voluptuous interpretation
